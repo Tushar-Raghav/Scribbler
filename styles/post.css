@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: white;
+}
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 95%;
+    height: 100%;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+#editBtn{
+    font-size: 1vw;
+    width: 8%;
+    padding: 0.5%;
+    background-color: rgb(255, 18, 18);
+    color: white;
+    box-shadow: 0 2px 4px 0 #ed2553, 0 3px 10px 0 #ed2553;
+    border: none;
+}
+#editIcon{
+    margin-left:10%;
+}
+#content{
+    margin-top: 1%;
+}
+#likeIcon{
+    margin-right:10%;
+}
+#likeBtn,#cmntBtn{
+    font-size: 1vw;
+    width: 8%;
+    padding: 0.5%;
+    margin-top: 1%;
+    background-color: rgb(255, 18, 18);
+    color: white;
+    border: none;
+    box-shadow: 0 2px 4px 0 #ed2553, 0 3px 10px 0 #ed2553;
+}
+#likePrompt{
+    margin-top: 1%;
+}
+#commentBox{
+    width: 60%;
+    height: 20vh;
+    margin-top: 1%;
+}
+#cmntContent{
+    margin-top: 1%;
+    border-top: 1vw solid rgb(228, 227, 227);
+    border-bottom: 1vw solid rgb(228, 227, 227);
+    border-left: 0.6vw solid rgb(228, 227, 227);
+    border-right: 0.6vw solid rgb(228, 227, 227);
+    width: 70%;
+}
+#cmntPromt{
+    margin-top: 1%;
+}

@@ -22,3 +22,11 @@ function dltPost(){
     deletePostModal.style.display="none";
     document.getElementById(id).style.display="none";
 }
+function settingContentOfId(getUser,getTitle,getContent){
+    let userName=document.getElementById(getUser).innerText;
+    localStorage.setItem('userName',userName);
+    let titleOfPost=document.getElementById(getTitle).innerText;
+    localStorage.setItem('title',titleOfPost);
+    let contentOfPost=document.getElementById(getContent).innerText;
+    localStorage.setItem('content',contentOfPost);
+}
