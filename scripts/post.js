@@ -53,5 +53,6 @@ var cmntList = document.getElementById('cmntList');
 function cmntStore(){
     if(getCmnt.value!==""){
         cmntList.innerHTML += `<p id='cmntContent'>${getCmnt.value}</p>`
+        getCmnt.value=``;
     }
 }
