@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Montez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3em;
+    height: 10%;
+}
+#proName{
+    font-family: 'Montez',cursive;
+    color: blue;
+    font-weight: 300;
+    font-size: 2.2rem;
+}
+#proBio{
+    font-weight: 200;
+    font-family: 'Ubuntu Mono';
+}
+#btnMenu{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+#btnMenu button{
+    background-color: rgb(67, 67, 255);
+    color: white;
+    text-align: center;
+    height: 65%;
+    width: 48%;
+    font-size: small;
+    border: 1px solid rgb(184, 182, 182);
+    border: outset;
+    font-size: 1vw;
+    margin: 0;
+}
+#refSignUp{
+    cursor: pointer;
+}
