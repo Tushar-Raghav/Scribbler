@@ -12,20 +12,26 @@ var flag = false;
 var counter = 0;
 var btn=document.getElementById('editBtn');
 function edit(){
-    var help=false;
+    let help=false;
     counter++;
     if(!flag){
         flag=true;
         help=true
         title.contentEditable=true;
         content.contentEditable=true;
+        title.setAttribute('id','editingTitle')
+        content.setAttribute('id','editingContent')
         btn.innerHTML=`Save<i class="fa-solid fa-save" id='editIcon'></i>`;
     }else{
             if(counter==2){
+                title.setAttribute('id','title')
+                content.setAttribute('id','content')
                 title.innerHTML=`<p>UPDATED:</p>${title.innerHTML}`;
                 content.innerHTML=`<p>UPDATED:</p>${content.innerHTML}`;
                 btn.innerHTML=`Edit<i class="fa-solid fa-pen-to-square" id='editIcon'></i>`;
             }else{
+                title.setAttribute('id','title')
+                content.setAttribute('id','content')
                 title.innerHTML=`${title.innerHTML}`;
                 content.innerHTML=`${content.innerHTML}`;
                 btn.innerHTML=`Edit<i class="fa-solid fa-pen-to-square" id='editIcon'></i>`;

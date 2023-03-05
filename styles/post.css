@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Montez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 *{
     margin: 0;
 }
 body{
     background-color: white;
+    height: 100%;
+    width: 100%;
 }
 #title{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+    width: 100%;
+    word-break: break-all;
 }
 #container{
     display: flex;
@@ -20,6 +27,9 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 1%;
+}
+#userName{
+    font-family: 'Ubuntu Mono';
 }
 #editBtn{
     font-size: 1vw;
@@ -34,7 +44,9 @@ body{
     margin-left:10%;
 }
 #content{
-    margin-top: 1%;
+    margin-top: 3%;
+    font-size: 0.9vw;
+    word-break: break-all;
 }
 #likeIcon{
     margin-right:10%;
@@ -66,5 +78,20 @@ body{
     width: 70%;
 }
 #cmntPromt{
-    margin-top: 1%;
+    margin-top: 1.5%;
+    font-weight: 600;
+    font-family: 'Ubuntu Mono';
+}
+#editingTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid orangered;
+    font-weight: bold;
+    word-break: break-all;
+}
+#editingContent{
+    margin-top: 3%;
+    word-break: break-all;
+    border: 1px solid orangered;
 }
