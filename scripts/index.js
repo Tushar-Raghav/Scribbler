@@ -18,11 +18,7 @@ createPostModalspan.onclick = function() {
 
 // When the user clicks anywhere outside of the signUpModal, close it
 window.onclick = function(event) {
-  if(event.target == signUpModal) {
-    signUpModal.style.display = "none";
-  }else if(event.target == signInModal){
-    signInModal.style.display = "none";
-  }else if(event.target == createPostModal){
+  if(event.target == createPostModal){
     createPostModal.style.display = "none";
   }
 }

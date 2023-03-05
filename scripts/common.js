@@ -35,6 +35,15 @@ signInModalbtn.onclick = function() {
 signInModalspan.onclick = function() {
   signInModal.style.display = "none";
 }
+
+window.onclick = function(event) {
+  if(event.target == signUpModal) {
+    signUpModal.style.display = "none";
+  }else if(event.target == signInModal){
+    signInModal.style.display = "none";
+  }
+}
+
 function showSignUp(){
   signInModal.style.display = "none";
   signUpModal.style.display = "block";
